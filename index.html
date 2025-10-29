@@ -512,7 +512,7 @@
                 
                 try {
                     // استخدام LibreTranslate API المجاني
-                    const response = await fetch('https://libretranslate.de/translate', {
+                    const response = await fetch('/api/translate', {
                         method: 'POST',
                         body: JSON.stringify({
                             q: sourceText.value,
